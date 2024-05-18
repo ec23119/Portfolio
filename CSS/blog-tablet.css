@@ -1,0 +1,165 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('common-elements-tablet.css');
+
+/* places content in the right area and makes a grid for the contents to fit */
+main {
+    grid-column: 5 / span 12;
+    grid-row: 3;
+    position: relative;
+    width: 100%;
+    min-height: 47.8rem;
+    margin: 1rem;
+    padding: 0;
+}
+
+aside {
+    margin: 0;
+    margin-top: 0.6rem;
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    width: 100%;
+    height: 14rem;
+    border-radius: 25pt;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#dateFilter {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1%;
+}
+
+#dateFilter label {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+aside button, aside select {
+    border-radius: 25pt;
+    border: 1px solid orange;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 6.9rem;
+    height: 2rem;
+    text-align: center;
+    justify-self: end;
+}
+
+aside h3 {
+    margin: 0;
+    padding: 3%;
+    color: black;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+select option {
+    border: 0;
+}
+
+/* styling the articles to match the site */
+article {
+    border-radius: 25pt;
+    position: relative;
+    height: 21rem;
+    width: 97%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem auto auto 2rem;
+    text-align: left;
+    border: 1px solid orangered;
+    margin-top: 1%;
+    box-shadow: -1px 0 0 0 red, 1px 0 0 0 orange;
+}
+
+article button {
+    border: 0;
+    border-radius: 25pt;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5%;
+}
+
+article button:hover {
+    background-color: rgb(255, 222, 160);
+    color: black;
+    transition: 0.5s;
+}
+
+/* styling the title of the articles */
+article h2 {
+    margin: 0;
+    padding: 4%;
+    color: rgb(172, 32, 172);
+    width: auto;
+    font-size: 1.5rem;
+}
+
+article pre {
+    margin: 0;
+    padding: 4%;
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0);
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+article small {
+    margin: 0;
+    padding: 3%;
+    padding-right: 5%;
+    color: rgb(0, 0, 0);
+    width: auto;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/* styleing the descriptions */
+pre {
+    margin: 2%;
+    padding: 2%;
+    color: rgb(0, 0, 0);
+    grid-column: 1;
+    grid-row: 3;
+    width: 60%;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+    transition: 0.5s;
+}
+
+.message {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    width: 90%;
+    border-top: 1px solid black;
+    border-radius: 25pt;
+    padding: 5%;
+}

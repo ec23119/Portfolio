@@ -1,0 +1,73 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('common-elements-tablet.css');
+
+body {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 3rem 3rem 49.5rem auto;
+}
+
+/* positions the main element in the right space and adds a grid to make structuring easier */
+main {
+    grid-column: 4 / span 14;
+    grid-row: 3;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.email-label, .password-label, #email, #password, #login, #register {
+    width: 90%;
+    height: 50%;
+    border-radius: 25pt;
+}
+
+label {
+    justify-content: center;
+    padding-top: 4%;
+}
+
+button {
+    justify-content: center;
+    border: 1px solid orangered;
+    box-shadow: -1px 0 0 0 red, 1px 0 0 0 orange;
+    text-align: center;
+}
+
+input {
+    justify-content: center;
+    border: 1px solid lightcoral;
+    text-align: center;
+}
+
+legend {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#login {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
